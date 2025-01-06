@@ -20,7 +20,7 @@ const SurveyForm = () => {
 
   const handleSubmit = async () => {
     try {
-        const response = await axios.post('https://backend-ochre-one-61.vercel.app/', formData);
+        const response = await axios.post('https://backend-ochre-one-61.vercel.app/api/surveys', formData);
         console.log('Survey submitted:', response.data);
         alert("Yay!!Your survey has been submitted")
     } catch (error) {
