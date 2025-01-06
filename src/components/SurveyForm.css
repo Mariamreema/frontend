@@ -1,0 +1,101 @@
+/* Surveyform CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #108e97;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #fcfbfb;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+}
+
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0e21ce;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0b0c0c;
+}
+.mb-3 {
+    margin-bottom: 15px;
+}
+
+/* Success Message (if needed) */
+.success-message {
+    text-align: center;
+    color: #28a745;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* Error Message (if needed) */
+.error-message {
+    text-align: center;
+    color: #dc3545;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+input:hover,
+select:hover {
+    border-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
