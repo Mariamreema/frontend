@@ -18,7 +18,8 @@ const SurveyForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault()
     try {
         const response = await axios.post('https://backend-ochre-one-61.vercel.app/api/surveys', formData);
         console.log('Survey submitted:', response.data);
@@ -111,7 +112,7 @@ const SurveyForm = () => {
             required
           />
         </div>
-        <button type="submit" className="btn btn-success">
+        <button type="submit" onClick={handleSubmit} className="btn btn-success">
           Submit
         </button>
       </form>
